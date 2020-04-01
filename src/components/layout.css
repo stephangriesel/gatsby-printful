@@ -1,0 +1,14 @@
+:root {
+  --mainBrown: #3b1f1f;
+  --mainYellow: #fcb419;
+  --mainGrey: #979797;
+  --mainWhite: #ebebeb;
+  --mainDark: rgb(22, 22, 22);
+}
+
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
