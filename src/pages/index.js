@@ -6,6 +6,8 @@ import SEO from "../components/seo"
 
 import BackgroundSection from '../components/Globals/BackgroundSection';
 
+import Info from '../components/Home/Info'
+
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -15,6 +17,7 @@ const IndexPage = ({ data }) => (
       title="Koffie Kaskenades"
       styleClass="default-background"
     />
+    <Info />
   </Layout >
 );
 
