@@ -1,6 +1,6 @@
 :root {
   --mainBrown: #3b1f1f;
-  --mainYellow: #fcb419;
+  --mainYellow: rgb(252, 180, 25);
   --mainGrey: #c7c7c7;
   --mainWhite: #ebebeb;
   --mainDark: rgb(22, 22, 22);
@@ -11,4 +11,14 @@ body {
   color: var(--mainDark);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(252, 180, 25, 0.8), rgba(252, 180, 25, 0.8));
+  background-position: center;
+  background-size: cover;
 }

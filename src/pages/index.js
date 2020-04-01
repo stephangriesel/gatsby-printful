@@ -4,21 +4,24 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { FaShoppingCart } from 'react-icons/fa';
+import BackgroundSection from '../components/Globals/BackgroundSection';
+
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <FaShoppingCart />
-  </Layout>
+    <BackgroundSection
+      img={data.img.childImageSharp.fluid}
+      title="Koffie Kaskenades"
+      styleClass="default-background"
+    />
+  </Layout >
 );
 
 export const query = graphql`
 {
   img:file(relativePath:{
-    eq:"default-background.jpeg"
+    eq:"default-bg.jpg"
   }){
     childImageSharp{
       fluid {
