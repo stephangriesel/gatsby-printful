@@ -18,10 +18,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(252, 180, 25, 0.8), rgba(252, 180, 25, 0.8));
+  /* background: linear-gradient(rgba(252, 180, 25, 0.8), rgba(252, 180, 25, 0.8)); */
   background-position: center;
   background-size: cover;
 }
+
+.about-background {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255.255.255.0.5)); */
+  background-size: cover;
+}
+
 .btn-yellow {
   color: var(--mainYellow);
   border-color: var(--mainYellow);
