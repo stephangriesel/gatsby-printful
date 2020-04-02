@@ -31,3 +31,8 @@ body {
   background: var(--mainYellow);
   color: var(--mainBrown);
 }
+
+.footer {
+  background: var(--mainBrown);
+  color: var(--mainYellow);
+}
