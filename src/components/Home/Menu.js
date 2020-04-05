@@ -19,10 +19,28 @@ class Menu extends Component {
                 <section className="menu py-5">
                     <div className="container">
                         <Title title="Our Menu" />
-                        <div className="row mb-5">
-                            <div className="col">
-                                <h1>Items</h1>
-                            </div>
+                        {/* Categories
+                        Items */}
+                        <div className="row">
+                            {/* coffee items array in state, loop through array */}
+                            {this.state.coffeeItems.map(({ node }) => {
+                                return (
+
+                                    <div key={node.id} className="col-11 col-md-6 my-3 d-flex mx-auto">
+                                        <div><Img fixed={node.image.fixed} /></div>
+                                        <div className="flex-grow-1 px-3">
+                                            <div className="d-flex justify-content-between">
+                                                <h6 className="mb-0">{node.title}</h6>
+                                                <h6 className="mb-0">{node.price}</h6>
+                                            </div>
+                                            <p className="text-muted">
+                                                <small>{node.description.description}</small>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                )
+                            })}
                         </div>
                     </div>
                 </section>

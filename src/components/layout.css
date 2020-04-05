@@ -47,3 +47,7 @@ body {
   background: var(--mainBrown);
   color: var(--mainYellow);
 }
+
+.menu {
+  background: var(--mainGrey);
+}
