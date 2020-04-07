@@ -26,6 +26,13 @@ module.exports = {
         // host: `preview.contentful.com`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-snipcart',
+      options: {
+        apiKey: process.env.SNIPCART_KEY,
+        autopop: true
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
