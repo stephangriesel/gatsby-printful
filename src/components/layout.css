@@ -48,6 +48,7 @@ body {
   color: var(--mainYellow);
 }
 
-.menu {
+.menu,
+.contact {
   background: var(--mainGrey);
 }
