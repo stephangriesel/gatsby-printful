@@ -12,10 +12,10 @@ export default function Product({ product }) {
                     <button
                         className="btn btn-yellow mt-3 text-capitalize snipcart-add-item"
                         data-item-id={product.id}
+                        data-item-name={product.title}
                         data-item-price={product.price}
                         data-item-image={product.image.fluid.src}
-                        data-item-name={product.title}
-                        data-item-url="https://koffie-kaskenades.netlify.com"
+                        data-item-url="https://koffie-kaskenades.netlify.com/"
                     >Add</button>
                 </div>
             </div>
