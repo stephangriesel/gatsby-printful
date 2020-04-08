@@ -11,7 +11,6 @@ const getProducts = graphql`
           id
           title
           price
-          pricetest
           image{
             fluid(maxHeight:450){
                 src
