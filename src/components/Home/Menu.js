@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Title from '../Globals/Title'
 import Img from 'gatsby-image'
+// import styles from '../css/parallax.module.css';
 
 const getCategories = items => {
     let tempItems = items.map(items => {
@@ -80,16 +81,22 @@ class Menu extends Component {
                 </section>
             );
         } else {
-            return (<section className="menu py-5">
-                <div className="container">
-                    <Title title="Our Menu"></Title>
-                    <div className="row">
-                        <div className="col-10 col-sm-6 mx-auto text-center text-capitalize">
-                            <h1>Nothing to display</h1>
-                        </div>
-                    </div>
+            return (
+                <div>
+                    <section>
+                        <section className="menu py-5">
+                            <div className="container">
+                                <Title title="Our Menu"></Title>
+                                <div className="row">
+                                    <div className="col-10 col-sm-6 mx-auto text-center text-capitalize">
+                                        <h1>Nothing to display</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
                 </div>
-            </section>)
+            )
         }
     }
 }

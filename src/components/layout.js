@@ -13,12 +13,16 @@ import "./layout.css"
 import Navbar from './Globals/Navbar';
 import Footer from './Globals/Footer';
 
+import styles from './css/parallax.module.css';
+
 const Layout = ({ children }) =>
 
   <>
     <Navbar />
-    {children}
-    <Footer />
+    <div className={styles.sectionWrapper}>
+      {children}
+      <Footer />
+    </div>
   </>
 
 

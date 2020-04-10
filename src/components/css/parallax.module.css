@@ -1,0 +1,33 @@
+/* 
+<div className={styles.sectionWrapper}>
+<section className={styles.contentArea}>
+<div className={styles.sticky}> 
+https://keithclark.co.uk/articles/pure-css-parallax-websites/
+*/
+
+body {
+  overflow: hidden;
+}
+
+.sectionWrapper {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.contentArea {
+  display: block;
+  background: #fff;
+  z-index: -1;
+}
+
+.sticky {
+  transform: translateZ(-1px) scale(2);
+  display: block;
+  background: #fff;
+}
+
+.contentAreaSmall {
+}
