@@ -23,11 +23,31 @@ body {
   z-index: -1;
 }
 
+.contentAreaProduct {
+  display: block;
+  background: #fff;
+  z-index: -1;
+  height: 100vh;
+}
+
 .sticky {
   transform: translateZ(-1px) scale(2);
+  height: 100vh;
+  display: block;
+  background: #fff;
+}
+
+.stickySmall {
+  transform: translateZ(-1px) scale(2);
+  height: 50vh;
   display: block;
   background: #fff;
 }
 
 .contentAreaSmall {
+  height: 100vh;
+}
+
+.contentAreaBig {
+  height: 135vh;
 }

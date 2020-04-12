@@ -56,7 +56,7 @@ export default class Navbar extends Component {
                             })
                         }
                         <li className="nav-item ml-sm-5">
-                            <button class="snipcart-checkout">Cart</button>
+                            <button className="snipcart-checkout">Cart</button>
                             {/* <FaCartArrowDown className="cart-icon" /> */}
                             {/* <span>test</span> */}
                         </li>

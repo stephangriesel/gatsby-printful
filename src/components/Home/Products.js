@@ -28,8 +28,7 @@ export default function Products() {
   return (
     <StaticQuery query={getProducts} render={data => {
       return (
-        <section className={styles.contentArea}>
-          {/* <div className={styles.sticky}> */}
+        <section className={styles.contentAreaProduct}>
           <section className="py-5">
             <div className="container">
               <Title title="Our Products" />
@@ -40,7 +39,6 @@ export default function Products() {
               </div>
             </div>
           </section>
-          {/* </div> */}
         </section>
 
       )
