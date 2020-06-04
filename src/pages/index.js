@@ -37,7 +37,7 @@ export const query = graphql`
       }
     }
   }
-  menu:allContentfulCoffeeItem{
+  menu:allContentfulHappyItem{
     edges{
       node{
         id

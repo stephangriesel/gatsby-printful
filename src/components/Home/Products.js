@@ -6,7 +6,7 @@ import styles from '../css/parallax.module.css';
 
 const getProducts = graphql`
 {
-    products:allContentfulCoffeeProduct{
+    products:allContentfulHappyProduct{
       edges{
         node{
           id
