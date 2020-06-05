@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../Globals/Title'
-import styles from '../css/parallax.module.css';
+// import styles from '../css/parallax.module.css';
 
 export default function Contact() {
     return (
