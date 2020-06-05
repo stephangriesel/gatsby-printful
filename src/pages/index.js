@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="Koffie Kaskenades"
+      title="Happy Skin"
       styleClass="default-background"
     />
     <Info />
@@ -49,9 +49,7 @@ export const query = graphql`
             ...GatsbyContentfulFixed_tracedSVG
           }
         }
-        description {
-          description
-        }
+        description 
       }
     }
   }
