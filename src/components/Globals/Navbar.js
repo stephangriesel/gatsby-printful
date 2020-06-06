@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import logo from '../../images/logo_small.png'
 import '../css/navbar.css';
+import { FaShoppingCart } from 'react-icons/fa'
 
 export default class Navbar extends Component {
     state = {
@@ -42,7 +43,7 @@ export default class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-sm bg-light navbar-light navbar-flex">
+            <nav className="navbar navbar-expand-sm bg-light navbar-light">
                 <Link to="/" className="navbar-brand">
                     <img src={logo} alt="logo" class="logo" />
                 </Link>
@@ -62,8 +63,8 @@ export default class Navbar extends Component {
                                 );
                             })
                         }
-                        <li className="nav-item ml-sm-5">
-                            <button className="snipcart-checkout">Cart</button>
+                        <li className="nav-item ml-sm-5 cart-icon">
+                            <button className="snipcart-checkout"><FaShoppingCart /></button>
                         </li>
                     </ul>
                 </div>

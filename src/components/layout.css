@@ -1,8 +1,9 @@
 :root {
   --mainBrown: #3b1f1f;
   --mainYellow: rgb(252, 180, 25);
-  --mainGrey: #c7c7c7;
-  --mainWhite: #ebebeb;
+  --mainGrey: #75716c;
+  --mainWhite: #ffffffea;
+  --mainOffWhite: #faf6d8;
   --mainDark: rgb(22, 22, 22);
 }
 
@@ -43,7 +44,7 @@ body {
 }
 
 .footer {
-  background: var(--mainBrown);
+  background: var(--mainGrey);
   color: var(--mainYellow);
 }
 

@@ -2,4 +2,15 @@
   width: 5em;
   height: auto;
 }
+
+.cart-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-icon button {
+  border: none;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=navbar.css.map */

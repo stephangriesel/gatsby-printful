@@ -2,3 +2,11 @@
   width: 5em;
   height: auto;
 }
+
+.cart-icon {
+  display: flex;
+  button {
+    border: none;
+    border-radius: 5px;
+  }
+}

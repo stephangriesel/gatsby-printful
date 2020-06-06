@@ -3,16 +3,33 @@ import Contact from '../components/Home/Contact'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-export const ContactPage = () => {
-    return (
-        <Layout>
-            <SEO title="Home" />
-            <div>
-                <Contact />
-            </div>
-        </Layout>
-    )
-}
+import BackgroundSection from '../components/Globals/BackgroundSection';
+
+const ContactPage = ({ data }) => (
+    <Layout>
+        <SEO title="Contact" />
+        <BackgroundSection
+            img={data.img.childImageSharp.fluid}
+            title="About Us"
+            styleClass="about-background"
+        />
+        <Contact />
+    </Layout>
+);
+
+export const query = graphql`
+    {
+      img:file(relativePath:{
+        eq:"contactus.jpg"
+      }){
+        childImageSharp{
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+    }
+    `
 
 export default ContactPage;
 
