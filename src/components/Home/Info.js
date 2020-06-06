@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Title from '../Globals/Title'
-import styles from '../css/parallax.module.css';
 
 export default function Info() {
     return (
-        <section className={styles.contentAreaSmall}>
+        <section>
             {/* <div className={styles.sticky}> */}
             <section className="py-5">
                 <div className="container"></div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import logo from '../../images/logo.svg'
-// import { FaCartArrowDown } from 'react-icons'
+import logo from '../../images/logo_small.png'
+import '../css/navbar.css';
 
 export default class Navbar extends Component {
     state = {
@@ -18,6 +18,16 @@ export default class Navbar extends Component {
                 path: "/about",
                 text: "about"
             },
+            {
+                id: 3,
+                path: "/about",
+                text: "company"
+            },
+            {
+                id: 4,
+                path: "/contact",
+                text: "contact"
+            },
         ]
     }
 
@@ -32,18 +42,15 @@ export default class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-sm bg-light navbar-light">
+            <nav className="navbar navbar-expand-sm bg-light navbar-light navbar-flex">
                 <Link to="/" className="navbar-brand">
-                    <img src={logo} alt="logo" />
-                    {/* {/* https://www.iconfinder.com/
-                    Creative Commons (Attribution 3.0 Unported);
-                    https://www.iconfinder.com/webalys */}
+                    <img src={logo} alt="logo" class="logo" />
                 </Link>
                 <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className={this.state.css}>
-                    <ul className="navbar-nav mx-auto">
+                    <ul className="navbar-nav mx-auto" >
                         {
                             this.state.links.map(link => {
                                 return (
@@ -57,8 +64,6 @@ export default class Navbar extends Component {
                         }
                         <li className="nav-item ml-sm-5">
                             <button className="snipcart-checkout">Cart</button>
-                            {/* <FaCartArrowDown className="cart-icon" /> */}
-                            {/* <span>test</span> */}
                         </li>
                     </ul>
                 </div>

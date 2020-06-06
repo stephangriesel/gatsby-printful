@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Title from '../Globals/Title'
 import Img from 'gatsby-image'
-import styles from '../css/parallax.module.css';
 
 const getCategories = items => {
     let tempItems = items.map(items => {
@@ -20,7 +19,7 @@ class Menu extends Component {
         console.log(props.items);
         this.state = {
             items: props.items.edges,
-            coffeeItems: props.items.edges,
+            happyItems: props.items.edges,
             categories: getCategories(props.items.edges)
         }
     }
@@ -28,13 +27,13 @@ class Menu extends Component {
         let tempItems = [...this.state.items];
         if (category === "all") {
             this.setState(() => {
-                return { coffeeItems: tempItems }
+                return { happyItems: tempItems }
             })
         }
         else {
             let items = tempItems.filter(({ node }) => node.category === category);
             this.setState(() => {
-                return { coffeeItems: items };
+                return { happyItems: items };
             })
         }
     }
@@ -44,8 +43,8 @@ class Menu extends Component {
         console.log(this.state.categories);
         if (this.state.items.length > 0) {
             return (
-                <section className={styles.contentAreaBig}>
-                    <div className={styles.stickySmall}>
+                <section>
+                    <div>
                         <section className="menu py-5">
                             <div className="container">
                                 <Title title="Our Menu" />
@@ -59,8 +58,8 @@ class Menu extends Component {
                                 </div>
                                 {/* Items */}
                                 <div className="row">
-                                    {/* coffee items array in state, loop through array */}
-                                    {this.state.coffeeItems.map(({ node }) => {
+                                    {/* happy items array in state, loop through array */}
+                                    {this.state.happyItems.map(({ node }) => {
                                         return (
 
                                             <div key={node.id} className="col-11 col-md-6 my-3 d-flex mx-auto">
@@ -86,8 +85,8 @@ class Menu extends Component {
             );
         } else {
             return (
-                <section className={styles.contentAreaSmall}>
-                    <div className={styles.sticky}>
+                <section>
+                    <div>
                         <div>
                             <section>
                                 <section className="menu py-5">
