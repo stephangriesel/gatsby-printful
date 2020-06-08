@@ -63,8 +63,8 @@ export default class Navbar extends Component {
                                 );
                             })
                         }
-                        <li className="nav-item ml-sm-5 cart-icon">
-                            <button className="snipcart-checkout"><FaShoppingCart /></button>
+                        <li className="nav-item ml-sm-5 cart-icon toggle">
+                            <button className="snipcart-checkout"><span className="bag"><FaShoppingCart /></span></button>
                         </li>
                     </ul>
                 </div>

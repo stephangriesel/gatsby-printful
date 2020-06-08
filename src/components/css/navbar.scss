@@ -3,10 +3,19 @@
   height: auto;
 }
 
-.cart-icon {
+.navbar-nav {
   display: flex;
-  button {
-    border: none;
-    border-radius: 5px;
+  align-items: center;
+  .cart-icon {
+    display: flex;
+    button {
+      border: none;
+    }
+  }
+  .bag {
+    padding: 0.5em;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }

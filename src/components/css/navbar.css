@@ -3,14 +3,30 @@
   height: auto;
 }
 
-.cart-icon {
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-nav .cart-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.cart-icon button {
+.navbar-nav .cart-icon button {
   border: none;
-  border-radius: 5px;
+}
+
+.navbar-nav .bag {
+  padding: 0.5em;
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=navbar.css.map */
