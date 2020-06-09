@@ -52,7 +52,7 @@ class Menu extends Component {
                                 <div className="row mb-5">
                                     <div className="col-10 mx-auto text-center">
                                         {this.state.categories.map((category, index) => {
-                                            return (<button type="button" key={index} className="btn btn-yellow text-capitalize m-3" onClick={() => { this.handleItems(category) }}>{category}</button>)
+                                            return (<button type="button" key={index} className="btn btn-yellowish text-capitalize m-3" onClick={() => { this.handleItems(category) }}>{category}</button>)
                                         })}
                                     </div>
                                 </div>

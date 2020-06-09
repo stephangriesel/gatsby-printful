@@ -27,7 +27,7 @@ export const query = graphql`
     eq:"aboutus.jpg"
   }){
     childImageSharp{
-      fluid {
+      fluid(quality:100) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }

@@ -6,7 +6,7 @@ export default function BackgroundSection({ img, styleClass, title, children }) 
         <section>
             <BackgroundImage className={styleClass} fluid={img}>
                 <h1 className="title text-white text-uppercase text-center display-4 font-weight-bold">
-                    {title}
+                    {/* {title} */}
                 </h1>
                 {children}
             </BackgroundImage>

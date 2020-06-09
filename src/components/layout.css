@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+
+h1 {
+  font-family: "Grand Hotel", cursive;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,12 +11,14 @@
 }
 
 :root {
-  --mainBrown: #3b1f1f;
-  --mainYellow: rgb(252, 180, 25);
-  --mainGrey: #75716c;
+  --mainPink: #ffa69eff;
+  --mainYellowish: #faf3ddff;
+  --mainGreen: #b8f2e6ff;
+  --mainBlue: #aed9e0ff;
+  --mainGrey: #5e6472ff;
   --mainWhite: #ffffffea;
   --mainOffWhite: #faf6d8;
-  --mainDark: rgb(22, 22, 22);
+  --mainDark: #161616;
 }
 
 body {
@@ -21,7 +29,7 @@ body {
 }
 
 .default-background {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,22 +47,45 @@ body {
   background-size: cover;
 }
 
-.btn-yellow {
-  color: var(--mainYellow);
-  border-color: var(--mainYellow);
+.btn-pink {
+  color: var(--mainPink);
+  border-color: var(--mainPink);
 }
 
-.btn-yellow:hover {
-  background: var(--mainYellow);
-  color: var(--mainBrown);
+.btn-pink:hover {
+  background: var(--mainPink);
+  color: var(--mainWhite);
+  transition: ease-in 0.5s;
+}
+
+.btn-green {
+  border-color: var(--mainGreen);
+  color: var(--mainGrey);
+}
+
+.btn-green:hover {
+  background: var(--mainGreen);
+  color: var(--mainDark);
+  transition: ease-in 0.5s;
+}
+
+.btn-yellowish {
+  border-color: var(--mainYellowish);
+  color: var(--mainWhite);
+}
+
+.btn-yellowish:hover {
+  background: var(--mainYellowish);
+  color: var(--mainDark);
+  transition: ease-in 0.5s;
 }
 
 .footer {
   background: var(--mainGrey);
-  color: var(--mainYellow);
+  color: var(--mainOffWhite);
 }
 
 .menu,
 .contact {
-  background: var(--mainGrey);
+  background: var(--mainBlue);
 }

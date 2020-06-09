@@ -30,7 +30,7 @@ export const query = graphql`
     eq:"default-bg.jpg"
   }){
     childImageSharp{
-      fluid {
+      fluid(quality:100) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }

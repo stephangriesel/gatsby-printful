@@ -45,7 +45,7 @@ export default class Navbar extends Component {
         return (
             <nav className="navbar navbar-expand-sm bg-light navbar-light">
                 <Link to="/" className="navbar-brand">
-                    <img src={logo} alt="logo" class="logo" />
+                    <h1>Happy Skin</h1>
                 </Link>
                 <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
                     <span className="navbar-toggler-icon"></span>
