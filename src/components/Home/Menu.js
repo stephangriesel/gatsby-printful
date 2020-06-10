@@ -47,7 +47,7 @@ class Menu extends Component {
                     <div>
                         <section className="menu py-5">
                             <div className="container">
-                                <Title title="Our Menu" />
+                                <Title title="Happy Treatments" />
                                 {/* Categories */}
                                 <div className="row mb-5">
                                     <div className="col-10 mx-auto text-center">

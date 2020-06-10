@@ -7,29 +7,24 @@ import SEO from "../components/seo"
 import BackgroundSection from '../components/Globals/BackgroundSection';
 
 import Info from '../components/Home/Info'
-import Menu from '../components/Home/Menu'
-import Products from '../components/Home/Products'
-import LatestProducts from '../components/Home/ProductHighlights'
 
-const IndexPage = ({ data }) => (
-  < Layout >
-    <SEO title="Home" />
+
+const ArticlesPage = ({ data }) => (
+  <Layout>
+    <SEO title="Articles" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="Happy Skin"
-      styleClass="default-background"
+      title="Articles"
+      styleClass="about-background"
     />
     <Info />
-    {/* <Menu items={data.menu} /> */}
-    {/* <Products /> */}
-    <LatestProducts />
   </Layout >
 );
 
 export const query = graphql`
 {
   img:file(relativePath:{
-    eq:"default-bg.jpg"
+    eq:"aboutus.jpg"
   }){
     childImageSharp{
       fluid(quality:100) {
@@ -40,4 +35,4 @@ export const query = graphql`
 }
 `
 
-export default IndexPage
+export default ArticlesPage

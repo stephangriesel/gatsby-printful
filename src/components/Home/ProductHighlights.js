@@ -3,9 +3,9 @@ import Product from './Product'
 import Title from '../Globals/Title'
 import { StaticQuery, graphql } from 'gatsby'
 
-const getProducts = graphql`
+const getLatestProducts = graphql`
 {
-    products:allContentfulHappyProduct{
+  latestProducts: allContentfulLatestHappyProduct{
       edges{
         node{
           id
@@ -23,16 +23,16 @@ const getProducts = graphql`
   }
 `
 
-export default function Products() {
+export default function LatestProducts() {
   return (
-    <StaticQuery query={getProducts} render={data => {
+    <StaticQuery query={getLatestProducts} render={data => {
       return (
         <section>
           <section className="py-5">
             <div className="container">
-              <Title title="Happy Products" />
+              <Title title="Latest Happy Products" />
               <div className="row">
-                {data.products.edges.map(({ node: product }) => {
+                {data.latestProducts.edges.map(({ node: product }) => {
                   return <Product key={product.id} product={product} />
                 })}
               </div>
