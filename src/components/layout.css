@@ -10,6 +10,10 @@ h1 {
   margin: 0;
 }
 
+.wrapper {
+  height: 90vh;
+}
+
 :root {
   --mainPink: #ffa69eff;
   --mainYellowish: #faf3ddff;
@@ -19,6 +23,10 @@ h1 {
   --mainWhite: #ffffffea;
   --mainOffWhite: #faf6d8;
   --mainDark: #161616;
+}
+
+.wrapper {
+  height: 90vh;
 }
 
 body {

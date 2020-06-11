@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import BackgroundSection from '../components/Globals/BackgroundSection';
+// import BackgroundSection from '../components/Globals/BackgroundSection';
 
 import Products from '../components/Home/Products'
 
@@ -12,11 +12,11 @@ import Products from '../components/Home/Products'
 const ShopPage = ({ data }) => (
   <Layout>
     <SEO title="Shop" />
-    <BackgroundSection
+    {/* <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="Shop"
       styleClass="about-background"
-    />
+    /> */}
     <Products />
   </Layout >
 );
