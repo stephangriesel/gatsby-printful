@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import BackgroundSection from '../components/Globals/BackgroundSection';
 
 import Info from '../components/Home/Info'
+import Articles from '../components/Home/Articles'
 
 
 const ArticlesPage = ({ data }) => (
@@ -18,6 +19,7 @@ const ArticlesPage = ({ data }) => (
       styleClass="about-background"
     />
     <Info />
+    <Articles />
   </Layout >
 );
 
