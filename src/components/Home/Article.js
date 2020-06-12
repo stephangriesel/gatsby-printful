@@ -1,10 +1,13 @@
 import React from 'react'
+import Img from 'gatsby-image'
 
-export default function Article() {
+export default function Article({ article }) {
     return (
-        <div className="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto my-3">
-            <div className="card" style={{ minHeight: "100%" }}>
-                <h1>Article</h1>
+        <div className="mx-auto my-3">
+            <div className="" style={{ minHeight: "100%" }}>
+                <Img fluid={article.image.fluid} className="" />
+                <h1>{article.title}</h1>
+                <p>{article.description.description}</p>
             </div>
         </div>);
 }

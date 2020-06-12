@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 const getBlogPosts = graphql`
 {
-    blog:allContentfulHappyBlog {
+    blogPost:allContentfulHappyBlog {
       edges {
         node {
           id
@@ -13,9 +13,10 @@ const getBlogPosts = graphql`
           description {
             description
           }
-          image {
-            fixed {
-              src
+          image{
+            fluid{
+                src
+              ...GatsbyContentfulFluid
             }
           }
         }
@@ -33,8 +34,8 @@ export default function BlogPosts() {
                         <div className="container">
                             <Title title="Articles" />
                             <div className="row">
-                                {data.blog.edges.map(() => {
-                                    return <Article />
+                                {data.blogPost.edges.map(({ node: article }) => {
+                                    return <Article key={article.id} article={article} />
                                 })}
                             </div>
                         </div>
