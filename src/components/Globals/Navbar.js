@@ -48,7 +48,7 @@ export default class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-sm bg-light navbar-light">
+            <nav className="navbar navbar-expand-sm navbar-light">
                 <Link to="/" className="navbar-brand">
                     <h1>Happy Skin</h1>
                 </Link>

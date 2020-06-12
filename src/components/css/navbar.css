@@ -3,6 +3,12 @@
   height: auto;
 }
 
+.navbar {
+  max-width: 980px;
+  width: 100%;
+  margin: 1em auto;
+}
+
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
