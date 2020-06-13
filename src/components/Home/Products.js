@@ -27,7 +27,7 @@ export default function Products() {
   return (
     <StaticQuery query={getProducts} render={data => {
       return (
-        <section>
+        <section className="fade-in">
           <section className="py-5">
             <div className="container">
               <Title title="Happy Products" />

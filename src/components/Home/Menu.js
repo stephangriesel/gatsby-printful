@@ -44,7 +44,7 @@ class Menu extends Component {
         if (this.state.items.length > 0) {
             return (
                 <section>
-                    <div>
+                    <div className="fade-in">
                         <section className="menu py-5">
                             <div className="container">
                                 <Title title="Happy Treatments" />

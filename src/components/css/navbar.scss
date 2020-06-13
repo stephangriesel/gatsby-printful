@@ -21,7 +21,25 @@
   .bag {
     padding: 0.5em;
   }
-  a:hover {
-    text-decoration: underline;
+  .nav-link {
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 60%;
+    height: 1px;
+    opacity: 0;
+    background-color: var(--mainPink);
+    transform: translate(-50%, 0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+    opacity: 1;
   }
 }

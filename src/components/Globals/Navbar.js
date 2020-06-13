@@ -49,14 +49,14 @@ export default class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-sm navbar-light">
-                <Link to="/" className="navbar-brand">
+                <Link to="/" className="navbar-brand fade-in">
                     <h1>Happy Skin</h1>
                 </Link>
                 <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className={this.state.css}>
-                    <ul className="navbar-nav mx-auto" >
+                    <ul className="navbar-nav mx-auto fade-in" >
                         {
                             this.state.links.map(link => {
                                 return (
