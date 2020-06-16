@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+
 h1 {
   font-family: "Grand Hotel", cursive;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -32,35 +32,24 @@ h1 {
 body {
   background: var(--mainWhite);
   color: var(--mainDark);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .default-background {
   min-height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-position: center;
   background-size: cover;
 }
 
 .about-background {
   min-height: 60vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-position: center;
   /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255.255.255.0.5)); */
   background-size: cover;
@@ -74,7 +63,6 @@ body {
 .btn-pink:hover {
   background: var(--mainPink);
   color: var(--mainWhite);
-  -webkit-transition: ease-in 0.5s;
   transition: ease-in 0.5s;
 }
 
@@ -86,7 +74,6 @@ body {
 .btn-green:hover {
   background: var(--mainGreen);
   color: var(--mainDark);
-  -webkit-transition: ease-in 0.5s;
   transition: ease-in 0.5s;
 }
 
@@ -98,7 +85,6 @@ body {
 .btn-yellowish:hover {
   background: var(--mainYellowish);
   color: var(--mainDark);
-  -webkit-transition: ease-in 0.5s;
   transition: ease-in 0.5s;
 }
 
@@ -113,16 +99,14 @@ body {
 }
 
 /* Bootstrap Override*/
+
 .prd-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 /* Animations */
+
 .fade-in {
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -136,7 +120,6 @@ body {
     opacity: 1;
   }
 }
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -147,7 +130,8 @@ body {
 }
 
 .swing-in-top-fwd {
-  -webkit-animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  -webkit-animation: swing-in-top-fwd 1.5s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 
@@ -167,7 +151,6 @@ body {
     opacity: 1;
   }
 }
-
 @keyframes swing-in-top-fwd {
   0% {
     -webkit-transform: rotateX(-100deg);
@@ -184,4 +167,3 @@ body {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=layout.css.map */

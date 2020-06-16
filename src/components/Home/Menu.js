@@ -62,12 +62,12 @@ class Menu extends Component {
                                     {this.state.happyItems.map(({ node }) => {
                                         return (
 
-                                            <div key={node.id} className="col-11 col-md-6 my-3 d-flex mx-auto">
-                                                <div><Img fixed={node.image.fixed} /></div>
-                                                <div className="flex-grow-1 px-3">
-                                                    <div className="d-flex justify-content-between">
-                                                        <h6 className="mb-0">{node.title}</h6>
-                                                        <h6 className="mb-0">R{node.price}</h6>
+                                            <div key={node.id} className="col-11 col-md-6 my-3 d-flex mx-auto swing-in-top-fwd">
+                                                <div className="prd-img"><Img fixed={node.image.fixed} /></div>
+                                                <div className="flex-grow-1 px-3 prd-item">
+                                                    <div className="d-flex">
+                                                        <div><h6 className="mb-1">{node.title}</h6></div>
+                                                        <div><h6 className="mb-1 ml-1"><strong>R{node.price}</strong></h6></div>
                                                     </div>
                                                     <p className="text-muted">
                                                         <small>{node.description.description}</small>
