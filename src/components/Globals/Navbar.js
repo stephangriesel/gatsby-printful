@@ -24,11 +24,11 @@ export default class Navbar extends Component {
                 path: "/shop",
                 text: "shop"
             },
-            {
-                id: 4,
-                path: "/articles",
-                text: "articles"
-            },
+            // {
+            //     id: 4,
+            //     path: "/articles",
+            //     text: "articles"
+            // },
             {
                 id: 5,
                 path: "/contact",
@@ -68,9 +68,9 @@ export default class Navbar extends Component {
                                 );
                             })
                         }
-                        <li className="nav-item ml-sm-5 cart-icon toggle">
+                        {/* <li className="nav-item ml-sm-5 cart-icon toggle">
                             <button className="snipcart-checkout"><span className="bag"><FaShoppingCart /></span></button>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </nav>

@@ -10,10 +10,6 @@ h1 {
   margin: 0;
 }
 
-.wrapper {
-  height: 90vh;
-}
-
 :root {
   --mainPink: #ffa69eff;
   --mainYellowish: #faf3ddff;
@@ -23,10 +19,6 @@ h1 {
   --mainWhite: #ffffffea;
   --mainOffWhite: #faf6d8;
   --mainDark: #161616;
-}
-
-.wrapper {
-  height: 90vh;
 }
 
 body {
@@ -67,7 +59,7 @@ body {
 }
 
 .btn-pink {
-  color: var(--mainPink);
+  color: var(--mainGrey);
   border-color: var(--mainPink);
 }
 
@@ -92,7 +84,7 @@ body {
 
 .btn-yellowish {
   border-color: var(--mainYellowish);
-  color: var(--mainWhite);
+  color: var(--mainGrey);
 }
 
 .btn-yellowish:hover {
@@ -107,9 +99,12 @@ body {
   color: var(--mainOffWhite);
 }
 
-.menu,
+.menu {
+  min-height: 80vh;
+}
+
 .contact {
-  background: var(--mainBlue);
+  min-height: 50vh;
 }
 
 /* Bootstrap Override*/

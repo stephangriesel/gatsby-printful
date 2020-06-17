@@ -45,9 +45,9 @@ class Menu extends Component {
             return (
                 <section>
                     <div className="fade-in">
-                        <section className="menu py-5">
+                        <section className="menu">
                             <div className="container">
-                                <Title title="Happy Treatments" />
+                                <Title title="" />
                                 {/* Categories */}
                                 <div className="row mb-5">
                                     <div className="col-10 mx-auto text-center">
