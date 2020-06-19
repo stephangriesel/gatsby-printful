@@ -18,10 +18,25 @@ export default class ProductClass extends Component {
                 <section className="py-5">
                     <div className="container">
                         <Title title="Our Products" />
-                        <div className="row mb-5">
-                            <div className="col">
-                                <h1>There are products in array</h1>
-                            </div>
+                        <div className="row">
+                            {this.state.allProducts.map(({ node }) => {
+                                return (
+                                    <div key={node.id} className="col-11 col-md-6 my-3 d-flex mx-auto">
+                                        <div>
+                                            <Img fixed={node.image.fixed} />
+                                        </div>
+                                        <div className="flex-grow-1 px-3">
+                                            <div className="d-flex justify-content-between">
+                                                <h6 className="mb-6">{node.title}</h6>
+                                                <h6 className="mb-6">{node.price}</h6>
+                                            </div>
+                                            <p className="text-muted">
+                                                <small>{node.title}</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                )
+                            })}
                         </div>
                     </div>
                 </section>
