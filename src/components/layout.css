@@ -191,10 +191,4 @@ body {
     opacity: 1;
   }
 }
-
-@media only screen and (max-width: 600px) {
-  .single-prd {
-    width: 50% !important;
-  }
-}
 /*# sourceMappingURL=layout.css.map */
