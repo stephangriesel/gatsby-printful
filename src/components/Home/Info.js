@@ -14,9 +14,9 @@ export default function Info() {
                         <p className="lead text-muted mb-5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem commodi iusto, aspernatur rerum tempore ea error reprehenderit eveniet illo quisquam dolore culpa soluta libero aperiam corporis repudiandae consequuntur fugiat eligendi quos ad perspiciatis velit recusandae deserunt animi? Eligendi, atque! Eligendi molestias excepturi quae fugit deleniti illo quisquam possimus doloremque.
                     </p>
-                        <Link to="/about">
-                            <button className="btn text-uppercase btn-pink">About</button>
-                        </Link>
+                        {/* <Link to="/about">
+                            <button className="btn text-uppercase btn-yellowish">About</button>
+                        </Link> */}
                     </div>
                 </div>
             </section>

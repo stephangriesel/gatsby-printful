@@ -44,7 +44,7 @@
   width: 60%;
   height: 1px;
   opacity: 0;
-  background-color: var(--mainPink);
+  background-color: var(--mainGrey);
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   -webkit-transition: all 0.3s ease-in-out;

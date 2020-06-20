@@ -1,6 +1,5 @@
 import React from 'react'
 import Title from '../Globals/Title'
-// import styles from '../css/parallax.module.css';
 
 export default function Contact() {
     return (
@@ -24,7 +23,7 @@ export default function Contact() {
                             {/* <label htmlFor="name">Name</label> */}
                             <textarea name="description" id="description" className="form-control" rows="3" placeholder="Tell us more.." />
                         </div>
-                        <button type="submit" className="btn btn-pink btn-block text-capitalize mt-5">Talk to us</button>
+                        <button type="submit" className="btn btn-yellowish btn-block text-capitalize mt-5">Talk to us</button>
                     </form>
                 </div>
             </div>

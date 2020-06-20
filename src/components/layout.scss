@@ -28,6 +28,10 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
+section {
+  height: 80vh;
+}
+
 .default-background {
   min-height: 90vh;
   display: flex;
@@ -38,7 +42,7 @@ body {
 }
 
 .about-background {
-  min-height: 60vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;

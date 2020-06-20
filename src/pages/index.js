@@ -17,15 +17,15 @@ const IndexPage = ({ data }) => (
       title="Happy Skin"
       styleClass="default-background"
     />
-    <Info />
-    <LatestProducts />
+    {/* <Info /> */}
+    {/* <LatestProducts /> */}
   </Layout >
 );
 
 export const query = graphql`
 {
   img:file(relativePath:{
-    eq:"default-bg.jpg"
+    eq:"default-bg.jpeg"
   }){
     childImageSharp{
       fluid(quality:100) {

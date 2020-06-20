@@ -27,6 +27,10 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
+section {
+  height: 80vh;
+}
+
 .default-background {
   min-height: 90vh;
   display: -webkit-box;
@@ -43,7 +47,7 @@ body {
 }
 
 .about-background {
-  min-height: 60vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
