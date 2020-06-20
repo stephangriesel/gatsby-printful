@@ -66,21 +66,32 @@ export default class ProductClass extends Component {
                                 })}
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row mx-auto">
                             {this.state.allProducts.map(({ node }) => {
                                 return (
-                                    <div key={node.id} className="col-11 col-md-6 my-3 d-flex mx-auto">
-                                        <div>
-                                            <Img fixed={node.image.fixed} />
-                                        </div>
-                                        <div className="flex-grow-1 px-3">
-                                            <div className="d-flex justify-content-between">
-                                                <h6 className="mb-6">{node.title}</h6>
-                                                <h6 className="mb-6">R{node.price}</h6>
+                                    <div key={node.id} className="col-11 col-md-3 my-3 d-flex mx-auto bg-light rounded border">
+                                        <div className="prd-item-shop m-3 mx-auto">
+                                            <div className="mx-auto">
+                                                <h6 className="mb-6 text-center">{node.title}</h6>
                                             </div>
-                                            <p className="text-muted">
+                                            <div className="mx-auto">
+                                                <Img className="rounded-circle" fixed={node.image.fixed} />
+                                            </div>
+                                            <p className="text-muted mx-auto">
                                                 <small>{node.title}</small>
                                             </p>
+                                            <div className="mx-auto">
+                                                <h6>R{node.price}</h6>
+                                            </div>
+                                            <button
+                                                className="btn btn-green mt-3 text-capitalize snipcart-add-item"
+                                                data-item-id={node.id}
+                                                data-item-name={node.title}
+                                                data-item-price={node.price}
+                                                data-item-image={node.image.fixed.src}
+                                                data-item-url="https://happyskin.netlify.app"
+                                            >Add</button>
+
                                         </div>
                                     </div>
                                 )

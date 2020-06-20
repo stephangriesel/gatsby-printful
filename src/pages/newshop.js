@@ -10,15 +10,15 @@ import ProductClass from '../components/Home/ProductClass'
 
 
 const ShopPage = ({ data }) => (
-    <Layout>
-        <SEO title="Shop" />
-        {/* <BackgroundSection
+  <Layout>
+    <SEO title="Shop" />
+    {/* <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="Shop"
       styleClass="about-background"
     /> */}
-        <ProductClass products={data.product} />
-    </Layout >
+    <ProductClass products={data.product} />
+  </Layout >
 );
 
 export const query = graphql`
@@ -40,7 +40,7 @@ export const query = graphql`
         category
         price
         image {
-          fixed(width:50,height:50){
+          fixed(width:100,height:100){
             ...GatsbyContentfulFixed_tracedSVG
           }
         }
