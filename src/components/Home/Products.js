@@ -5,22 +5,25 @@ import { StaticQuery, graphql } from 'gatsby'
 
 const getProducts = graphql`
 {
-    products:allContentfulHappyProduct{
-      edges{
-        node{
-          id
-          title
-          price
-          image{
-            fluid(maxHeight:450){
-                src
-              ...GatsbyContentfulFluid_tracedSVG
-            }
+  product: allContentfulListProduct {
+    edges {
+      node {
+        id
+        title
+        category
+        price
+        description {
+          description
+        }
+        image {
+          fluid(maxHeight: 450){
+            src
           }
         }
       }
     }
   }
+}
 `
 
 export default function Products() {
@@ -30,7 +33,7 @@ export default function Products() {
         <section className="fade-in">
           <section className="py-5">
             <div className="container">
-              <Title title="Happy Products" />
+              <Title title="Our Products" />
               <div className="row">
                 {data.products.edges.map(({ node: product }) => {
                   return <Product key={product.id} product={product} />

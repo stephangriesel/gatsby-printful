@@ -80,6 +80,11 @@ export default class ProductClass extends Component {
                                             <p className="text-muted mx-auto">
                                                 <small>{node.title}</small>
                                             </p>
+                                            <p className="mx-auto">
+                                                <p className="mb-6 text-center">
+                                                    {node.description.description}
+                                                </p>
+                                            </p>
                                             <div className="mx-auto">
                                                 <h6>R{node.price}</h6>
                                             </div>
