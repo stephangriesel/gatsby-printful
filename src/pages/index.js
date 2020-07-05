@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="Happy Skin"
+      title="Hindernis"
       styleClass="default-background"
     />
     {/* <Info /> */}
@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => (
 export const query = graphql`
 {
   img:file(relativePath:{
-    eq:"default-bg.jpeg"
+    eq:"default-bg.jpg"
   }){
     childImageSharp{
       fluid(quality:100) {

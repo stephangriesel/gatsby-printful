@@ -33,7 +33,7 @@ export default function Products() {
         <section className="fade-in">
           <section className="py-5">
             <div className="container">
-              <Title title="Our Products" />
+              {/* <Title title="Our Products" /> */}
               <div className="row">
                 {data.products.edges.map(({ node: product }) => {
                   return <Product key={product.id} product={product} />

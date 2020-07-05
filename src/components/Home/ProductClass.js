@@ -50,7 +50,7 @@ export default class ProductClass extends Component {
             return (
                 <section className="py-5">
                     <div className="container">
-                        <Title title="Our Products" />
+                        {/* <Title title="Our Products" /> */}
                         <div className="row mb-5">
                             <div className="col-10 mx-auto text-center">
                                 {this.state.productCategories.map((category, index) => {
@@ -58,7 +58,7 @@ export default class ProductClass extends Component {
                                         <button
                                             type="button"
                                             key={index}
-                                            className="btn btn-yellowish text-capitalize m-1" onClick={() => {
+                                            className="btn btn-grey text-capitalize m-1" onClick={() => {
                                                 this.handleProducts(category);
                                             }}>{category}
                                         </button>
@@ -69,7 +69,7 @@ export default class ProductClass extends Component {
                         <div className="row mx-auto">
                             {this.state.allProducts.map(({ node }) => {
                                 return (
-                                    <div key={node.id} className="col-9 col-md-3 my-3 d-flex mx-auto bg-light rounded border">
+                                    <div key={node.id} className="col-9 col-md-3 my-3 d-flex mx-auto bg-dark rounded border">
                                         <div className="prd-item-shop m-3 mx-auto fade-in">
                                             <div className="mx-auto">
                                                 <h6 className="mb-6 text-center">{node.title}</h6>
@@ -89,7 +89,7 @@ export default class ProductClass extends Component {
                                                 <h6>R{node.price}</h6>
                                             </div>
                                             <button
-                                                className="btn btn-green mt-3 text-capitalize snipcart-add-item"
+                                                className="btn btn-grey mt-3 text-capitalize snipcart-add-item"
                                                 data-item-id={node.id}
                                                 data-item-name={node.title}
                                                 data-item-price={node.price}

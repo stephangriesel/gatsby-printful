@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 
 h1 {
-  font-family: "Grand Hotel", cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 * {
@@ -15,15 +15,16 @@ h1 {
   --mainYellowish: #faf3ddff;
   --mainGreen: #b8f2e6ff;
   --mainBlue: #aed9e0ff;
-  --mainGrey: #5e6472ff;
+  --mainDarkerGrey: #313131;
   --mainWhite: #ffffffea;
   --mainOffWhite: #faf6d8;
-  --mainDark: #161616;
+  --mainDark: #010101;
+  --mainGrey: #767676;
 }
 
 body {
-  background: var(--mainWhite);
-  color: var(--mainDark);
+  background: var(--mainDark);
+  color: var(--mainWhite);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
@@ -51,36 +52,14 @@ section {
   background-size: cover;
 }
 
-.btn-pink {
+.btn-grey {
+  border-color: var(--mainGrey);
   color: var(--mainGrey);
-  border-color: var(--mainPink);
 }
 
-.btn-pink:hover {
-  background: var(--mainPink);
+.btn-grey:hover {
+  background: var(--mainGrey);
   color: var(--mainWhite);
-  transition: ease-in 0.5s;
-}
-
-.btn-green {
-  border-color: var(--mainGreen);
-  color: var(--mainGrey);
-}
-
-.btn-green:hover {
-  background: var(--mainGreen);
-  color: var(--mainDark);
-  transition: ease-in 0.5s;
-}
-
-.btn-yellowish {
-  border-color: var(--mainYellowish);
-  color: var(--mainGrey);
-}
-
-.btn-yellowish:hover {
-  background: var(--mainYellowish);
-  color: var(--mainDark);
   transition: ease-in 0.5s;
 }
 

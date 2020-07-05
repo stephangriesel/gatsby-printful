@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-// import logo from '../../images/logo_small.png'
+import logo from '../../images/logo.png'
 import '../css/navbar.css';
 import { FaShoppingCart } from 'react-icons/fa'
 
@@ -9,16 +9,16 @@ export default class Navbar extends Component {
         navbarOpen: false,
         css: 'collapse navbar-collapse',
         links: [
-            {
-                id: 1,
-                path: "/",
-                text: "home"
-            },
-            {
-                id: 2,
-                path: "/treatments",
-                text: "treatments"
-            },
+            // {
+            //     id: 1,
+            //     path: "/",
+            //     text: "home"
+            // },
+            // {
+            //     id: 2,
+            //     path: "/treatments",
+            //     text: "treatments"
+            // },
             {
                 id: 3,
                 path: "/shop",
@@ -48,9 +48,11 @@ export default class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-sm navbar-light">
+            <nav className="navbar navbar-expand-sm navbar-dark">
                 <Link to="/" className="navbar-brand fade-in">
-                    <h1>Happy Skin</h1>
+                    <div className="logo-wrapper">
+                        <img className="logo" src={logo} alt="logo" />
+                    </div>
                 </Link>
                 <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
                     <span className="navbar-toggler-icon"></span>
@@ -68,9 +70,9 @@ export default class Navbar extends Component {
                                 );
                             })
                         }
-                        {/* <li className="nav-item ml-sm-5 cart-icon toggle">
+                        <li className="nav-item ml-sm-5 cart-icon toggle">
                             <button className="snipcart-checkout"><span className="bag"><FaShoppingCart /></span></button>
-                        </li> */}
+                        </li>
                     </ul>
                 </div>
             </nav>

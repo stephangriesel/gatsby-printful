@@ -6,7 +6,7 @@ export default function Contact() {
 
 
         <section className="contact py-3 fade-in">
-            <Title title="Contact Us" />
+            {/* <Title title="Contact Us" /> */}
             <div className="row">
                 <div className="col-10 col-sm-8 col-md-6 mx-auto">
                     <form action="https://formspree.io/annie.leroux@outlook.com"
@@ -23,7 +23,7 @@ export default function Contact() {
                             {/* <label htmlFor="name">Name</label> */}
                             <textarea name="description" id="description" className="form-control" rows="3" placeholder="Tell us more.." />
                         </div>
-                        <button type="submit" className="btn btn-yellowish btn-block text-capitalize mt-5">Talk to us</button>
+                        <button type="submit" className="btn btn-grey btn-block text-capitalize mt-5">Talk to us</button>
                     </form>
                 </div>
             </div>
