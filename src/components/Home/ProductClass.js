@@ -69,8 +69,8 @@ export default class ProductClass extends Component {
                         <div className="row mx-auto">
                             {this.state.allProducts.map(({ node }) => {
                                 return (
-                                    <div key={node.id} className="col-9 col-md-3 my-3 d-flex mx-auto bg-dark rounded border">
-                                        <div className="prd-item-shop m-3 mx-auto fade-in">
+                                    <div key={node.id} className="col-12 col-md-4 my-3 d-flex mx-auto">
+                                        <div className="prd-item-shop m-3 mx-auto fade-in bg-dark p-5 rounded border">
                                             <div className="mx-auto">
                                                 <h6 className="mb-6 text-center">{node.title}</h6>
                                             </div>
@@ -88,14 +88,16 @@ export default class ProductClass extends Component {
                                             <div className="mx-auto">
                                                 <h6>R{node.price}</h6>
                                             </div>
-                                            <button
-                                                className="btn btn-grey mt-3 text-capitalize snipcart-add-item"
-                                                data-item-id={node.id}
-                                                data-item-name={node.title}
-                                                data-item-price={node.price}
-                                                data-item-image={node.image.fixed.src}
-                                                data-item-url="https://happyskin.netlify.app"
-                                            >Add</button>
+                                            <div className="mx-auto">
+                                                <button
+                                                    className="btn btn-grey mt-3 text-capitalize snipcart-add-item"
+                                                    data-item-id={node.id}
+                                                    data-item-name={node.title}
+                                                    data-item-price={node.price}
+                                                    data-item-image={node.image.fixed.src}
+                                                    data-item-url="https://happyskin.netlify.app"
+                                                >Add</button>
+                                            </div>
 
                                         </div>
                                     </div>

@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => (
       title="Hindernis"
       styleClass="default-background"
     />
-    {/* <Info /> */}
+    <Info />
     {/* <LatestProducts /> */}
   </Layout >
 );
