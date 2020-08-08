@@ -104,12 +104,28 @@ body {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
+  width: 280px;
 }
 
 /* Animations */
 .fade-in {
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+/* Snipcart Overwites */
+.snip-layout .snip-footer__copyright {
+  font-size: 0 !important;
+  height: 20px;
+}
+
+.snip-btn--highlight {
+  color: #FFFFFF !important;
+  background: #000 !important;
+}
+
+.snip-btn--highlight:hover {
+  color: #979797;
 }
 
 @-webkit-keyframes fade-in {
