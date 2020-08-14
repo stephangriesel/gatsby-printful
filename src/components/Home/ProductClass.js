@@ -75,8 +75,14 @@ export default class ProductClass extends Component {
                                                 <h6 className="mb-6 text-center">{node.title}</h6>
                                             </div>
                                             <div className="mx-auto">
-                                                <Img className="rounded-circle" fixed={node.image.fixed} />
+                                                {/* <a className="lightbox" href="#img"> */}
+                                                <Img className="rounded-circle lightbox" fixed={node.image.fixed} />
+                                                {/* </a> */}
                                             </div>
+                                            {/* <div className="lightbox-target" id="img">
+                                                <Img fixed={node.image.fluid} />
+                                                <a className="lightbox-close" href="#"></a>
+                                            </div> */}
                                             <p className="text-muted mx-auto">
                                                 <small>{node.title}</small>
                                             </p>
