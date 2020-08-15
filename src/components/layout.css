@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 h1 {
   font-family: "Josefin Sans", sans-serif;
 }
@@ -73,8 +74,14 @@ body {
 }
 
 .footer {
-  background: var(--mainGrey);
-  color: var(--mainOffWhite);
+  font-family: 'Questrial', sans-serif;
+  background: var(--mainBlack);
+  color: var(--mainGrey);
+  text-decoration: none;
+}
+
+.footer a {
+  color: var(--mainGrey);
 }
 
 .menu {
@@ -127,6 +134,11 @@ body {
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
+}
+
+.card {
+  background-color: var(--mainDarkerGrey);
+  border: solid #FFF 1px;
 }
 
 picture img {

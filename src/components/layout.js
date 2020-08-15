@@ -22,7 +22,7 @@ const Layout = ({ children }) =>
       <div className="wrapper">
         {children}
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </SimpleReactLightbox>
   </>
