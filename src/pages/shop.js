@@ -47,7 +47,7 @@ export const query = graphql`
             ...GatsbyContentfulFixed_tracedSVG
           }
           fluid {
-            src
+            ...GatsbyContentfulFluid
           }
         }
       }

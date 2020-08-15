@@ -12,16 +12,19 @@ import './bootstrap.min.css';
 import "./layout.css"
 import Navbar from './Globals/Navbar';
 import Footer from './Globals/Footer';
+import SimpleReactLightbox from "simple-react-lightbox";
 
 const Layout = ({ children }) =>
 
   <>
-    <Navbar />
-    <div className="wrapper">
-      {children}
+    <SimpleReactLightbox>
+      <Navbar />
+      <div className="wrapper">
+        {children}
 
-      {/* <Footer /> */}
-    </div>
+        {/* <Footer /> */}
+      </div>
+    </SimpleReactLightbox>
   </>
 
 

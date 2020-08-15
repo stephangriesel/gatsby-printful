@@ -1,7 +1,65 @@
 import React, { Component } from 'react'
 import Title from '../Globals/Title'
 import Img from 'gatsby-image'
+import { SRLWrapper } from "simple-react-lightbox";
 import { node } from 'prop-types';
+
+const options = {
+    settings: {
+        autoplaySpeed: 3000,
+        disableKeyboardControls: false,
+        disablePanzoom: false,
+        disableWheelControls: false,
+        hideControlsAfter: 3000,
+        lightboxTransitionSpeed: 0.6,
+        lightboxTransitionTimingFunction: 'linear',
+        overlayColor: 'rgba(0, 0, 0, 0.9)',
+        slideAnimationType: 'fade',
+        slideSpringValues: [300, 200],
+        slideTransitionSpeed: 0.6,
+        slideTransitionTimingFunction: 'linear'
+    },
+    caption: {
+        captionAlignment: 'start',
+        captionColor: '#FFFFFF',
+        captionContainerPadding: '0',
+        captionFontFamily: 'inherit',
+        captionFontSize: 'inherit',
+        captionFontStyle: 'inherit',
+        captionFontWeight: 'inherit',
+        captionTextTransform: 'inherit',
+        showCaption: true
+    },
+    buttons: {
+        backgroundColor: 'rgba(30,30,36,0.8)',
+        iconColor: 'rgba(255, 255, 255, 0.8)',
+        iconPadding: '5px',
+        showAutoplayButton: false,
+        showCloseButton: true,
+        showDownloadButton: false,
+        showFullscreenButton: true,
+        showNextButton: false,
+        showPrevButton: false,
+        showThumbnailsButton: false,
+        size: '40px'
+    },
+    thumbnails: {
+        showThumbnails: false,
+        thumbnailsAlignment: 'center',
+        thumbnailsContainerBackgroundColor: 'transparent',
+        thumbnailsContainerPadding: '0',
+        thumbnailsGap: '1px',
+        thumbnailsOpacity: 0.4,
+        thumbnailsPosition: 'bottom',
+        thumbnailsSize: ['100px', '80px']
+    },
+    progressBar: {
+        backgroundColor: '#f2f2f2',
+        fillColor: '#000000',
+        height: '3px',
+        showProgressBar: true
+    }
+}
 
 const getProductCategories = products => {
     let tempProducts = products.map(products => {
@@ -74,23 +132,19 @@ export default class ProductClass extends Component {
                                             <div className="mx-auto">
                                                 <h6 className="mb-6 text-center">{node.title}</h6>
                                             </div>
-                                            <div className="mx-auto">
-                                                {/* <a className="lightbox" href="#img"> */}
-                                                <Img className="rounded-circle lightbox" fixed={node.image.fixed} />
-                                                {/* </a> */}
+                                            <div className="mx-auto" style={{ maxHeight: `150px`, marginBottom: `1.45rem` }}>
+                                                <SRLWrapper options={options}>
+                                                    <Img className="rounded-circle prd-img" fixed={node.image.fixed} />
+                                                </SRLWrapper>
                                             </div>
-                                            {/* <div className="lightbox-target" id="img">
-                                                <Img fixed={node.image.fluid} />
-                                                <a className="lightbox-close" href="#"></a>
-                                            </div> */}
                                             <p className="text-muted mx-auto">
                                                 <small>{node.title}</small>
                                             </p>
-                                            <p className="mx-auto">
-                                                <p className="mb-6 text-center">
-                                                    {node.description.description}
-                                                </p>
+
+                                            <p className="mb-6 text-center">
+                                                {node.description.description}
                                             </p>
+
                                             <div className="mx-auto">
                                                 <h6>R{node.price}</h6>
                                             </div>
