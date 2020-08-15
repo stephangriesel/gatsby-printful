@@ -5,7 +5,7 @@
 
 // const getLatestProducts = graphql`
 // {
-//   latestProducts: allContentfulLatestHappyProduct{
+//   latestProducts: allContentfulHighlightProduct{
 //       edges{
 //         node{
 //           id
@@ -30,7 +30,7 @@
 //         <section>
 //           <section className="py-5">
 //             <div className="container">
-//               <Title title="Latest Happy Products" />
+//               <Title title="Latest Products" />
 //               <div className="row">
 //                 {data.latestProducts.edges.map(({ node: product }) => {
 //                   return <Product key={product.id} product={product} />

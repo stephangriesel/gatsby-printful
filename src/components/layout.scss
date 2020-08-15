@@ -11,6 +11,7 @@ h1 {
 }
 
 :root {
+  --mainBlack: #000000;
   --mainPink: #ffa69eff;
   --mainYellowish: #faf3ddff;
   --mainGreen: #b8f2e6ff;
@@ -87,11 +88,14 @@ section {
   display: flex;
   flex-direction: column;
   align-content: center;
-  width:280px;
+  width:400px;
 }
 
 .prd-img {
-  max-width: 100px;
+  max-width: 200px;
+  cursor: pointer;
+  background-color: #979797;
+  border-radius: 50%;
 }
 
 .prd-desc {
@@ -99,6 +103,12 @@ section {
   justify-content: center !important;
   align-content: center !important;
   align-items: center !important;
+}
+
+picture {
+  img {
+    padding:1.5em !important;
+  }
 }
 
 /* Animations */
@@ -119,10 +129,14 @@ section {
 
 .snip-btn--highlight {
   color:#FFFFFF !important;
-  background:#000 !important;
+  background:var(--mainBlack) !important;
   &:hover {
     color:#979797;
   }
+}
+
+.snipcart-checkout {
+  background:var(--mainBlack);
 }
   
 

@@ -11,6 +11,7 @@ h1 {
 }
 
 :root {
+  --mainBlack: #000000;
   --mainPink: #ffa69eff;
   --mainYellowish: #faf3ddff;
   --mainGreen: #b8f2e6ff;
@@ -104,11 +105,14 @@ body {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 280px;
+  width: 400px;
 }
 
 .prd-img {
-  max-width: 100px;
+  max-width: 200px;
+  cursor: pointer;
+  background-color: #979797;
+  border-radius: 50%;
 }
 
 .prd-desc {
@@ -125,6 +129,10 @@ body {
           align-items: center !important;
 }
 
+picture img {
+  padding: 1.5em !important;
+}
+
 /* Animations */
 .fade-in {
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -139,11 +147,15 @@ body {
 
 .snip-btn--highlight {
   color: #FFFFFF !important;
-  background: #000 !important;
+  background: var(--mainBlack) !important;
 }
 
 .snip-btn--highlight:hover {
   color: #979797;
+}
+
+.snipcart-checkout {
+  background: var(--mainBlack);
 }
 
 @-webkit-keyframes fade-in {

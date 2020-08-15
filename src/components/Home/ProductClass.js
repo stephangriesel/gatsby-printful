@@ -7,13 +7,13 @@ import { node } from 'prop-types';
 const options = {
     settings: {
         autoplaySpeed: 3000,
-        disableKeyboardControls: false,
+        disableKeyboardControls: true,
         disablePanzoom: false,
-        disableWheelControls: false,
+        disableWheelControls: true,
         hideControlsAfter: 3000,
         lightboxTransitionSpeed: 0.6,
         lightboxTransitionTimingFunction: 'linear',
-        overlayColor: 'rgba(0, 0, 0, 0.9)',
+        overlayColor: 'rgba(151,151,151,0.9)',
         slideAnimationType: 'fade',
         slideSpringValues: [300, 200],
         slideTransitionSpeed: 0.6,
@@ -132,9 +132,9 @@ export default class ProductClass extends Component {
                                             <div className="mx-auto">
                                                 <h6 className="mb-6 text-center">{node.title}</h6>
                                             </div>
-                                            <div className="mx-auto" style={{ maxHeight: `150px`, marginBottom: `1.45rem` }}>
+                                            <div className="mx-auto">
                                                 <SRLWrapper options={options}>
-                                                    <Img className="rounded-circle prd-img" fixed={node.image.fixed} />
+                                                    <Img className="prd-img" fixed={node.image.fixed} style={{ maxHeight: `200px`, marginBottom: `0.45rem` }} />
                                                 </SRLWrapper>
                                             </div>
                                             <p className="text-muted mx-auto">
