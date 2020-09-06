@@ -1,38 +1,38 @@
-import React from "react"
-import { graphql } from "gatsby"
+// import React from "react"
+// import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+// import Layout from "../components/layout"
+// import SEO from "../components/seo"
 
-import BackgroundSection from '../components/Globals/BackgroundSection';
+// import BackgroundSection from '../components/Globals/BackgroundSection';
 
-import Articles from '../components/Home/Articles'
+// import Articles from '../components/Home/Articles'
 
 
-const ArticlesPage = ({ data }) => (
-  <Layout>
-    <SEO title="Articles" />
-    <BackgroundSection
-      img={data.img.childImageSharp.fluid}
-      title="Articles"
-      styleClass="about-background"
-    />
-    <Articles />
-  </Layout >
-);
+// const ArticlesPage = ({ data }) => (
+//   <Layout>
+//     <SEO title="Articles" />
+//     <BackgroundSection
+//       img={data.img.childImageSharp.fluid}
+//       title="Articles"
+//       styleClass="about-background"
+//     />
+//     <Articles />
+//   </Layout >
+// );
 
-export const query = graphql`
-{
-  img:file(relativePath:{
-    eq:"aboutus.jpg"
-  }){
-    childImageSharp{
-      fluid(quality:100) {
-        ...GatsbyImageSharpFluid_tracedSVG
-      }
-    }
-  }
-}
-`
+// export const query = graphql`
+// {
+//   img:file(relativePath:{
+//     eq:"aboutus.jpg"
+//   }){
+//     childImageSharp{
+//       fluid(quality:100) {
+//         ...GatsbyImageSharpFluid_tracedSVG
+//       }
+//     }
+//   }
+// }
+// `
 
-export default ArticlesPage
+// export default ArticlesPage
