@@ -155,7 +155,7 @@ export default class ProductClass extends Component {
                                                     data-item-name={node.title}
                                                     data-item-price={node.price}
                                                     data-item-image={node.image.fixed.src}
-                                                    data-item-url="https://hindernis.netlify.app"
+                                                    data-item-url="https://hindernis.netlify.app/"
                                                 >Add</button>
                                             </div>
 
