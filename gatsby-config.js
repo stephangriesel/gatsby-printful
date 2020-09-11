@@ -33,6 +33,15 @@ module.exports = {
         autopop: true
       }
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Adam"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

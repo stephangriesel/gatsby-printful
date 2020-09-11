@@ -50,7 +50,8 @@ export default class Navbar extends Component {
         return (
             <nav className="navbar navbar-expand-sm navbar-dark">
                 <Link to="/" className="navbar-brand fade-in">
-                    <div className="logo-wrapper">
+                    <div className="logo-wrapper brand">
+                        {/* <h1>Hindernis</h1> */}
                         <img className="logo" src={logo} alt="logo" />
                     </div>
                 </Link>
