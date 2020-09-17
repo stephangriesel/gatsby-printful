@@ -72,7 +72,7 @@ export default class Navbar extends Component {
                             })
                         }
                         <li className="nav-item ml-sm-5 cart-icon toggle">
-                            <button className="snipcart-checkout"><span className="bag"><FaShoppingCart /></span></button>
+                            <button className="snipcart-checkout" aria-label="shopping cart button"><span className="bag"><FaShoppingCart /></span></button>
                         </li>
                     </ul>
                 </div>

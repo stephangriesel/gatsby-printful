@@ -18,6 +18,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-printful`,
+      options: {
+        apiKey: process.env.PRINTFUL_KEY,
+        paginationLimit: 100 // Default value is 20
+      },
+    },
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_ID,

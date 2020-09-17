@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Title from '../Globals/Title'
 import Img from 'gatsby-image'
 import { SRLWrapper } from "simple-react-lightbox";
-import { node } from 'prop-types';
+// import { node } from 'prop-types';
 
 const options = {
     settings: {
