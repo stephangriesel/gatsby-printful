@@ -18,15 +18,15 @@ h1, h4, li {
   --mainGreen: #b8f2e6ff;
   --mainBlue: #aed9e0ff;
   --mainDarkerGrey: #313131;
-  --mainWhite: #ffffffea;
+  --mainWhite: #ffffff;
   --mainOffWhite: #faf6d8;
   --mainDark: #010101;
   --mainGrey: #767676;
 }
 
 body {
-  background: var(--mainDark);
-  color: var(--mainWhite);
+  background: var(--mainWhite);
+  color: var(--mainDarkerGrey);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
@@ -42,6 +42,7 @@ section {
   justify-content: center;
   background-position: center;
   background-size: cover;
+  mask-image: linear-gradient(to top, transparent 5%, #000 100%);
 }
 
 .about-background {
@@ -140,14 +141,14 @@ picture {
 
 .snip-btn--highlight {
   color:#FFFFFF !important;
-  background:var(--mainBlack) !important;
+  background:var(--mainDarkerGrey) !important;
   &:hover {
     color:#979797;
   }
 }
 
 .snipcart-checkout {
-  background:var(--mainBlack);
+  background:var(--mainWhite);
 }
   
 

@@ -3,9 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 import BackgroundSection from '../components/Globals/BackgroundSection';
-
 import Info from '../components/Home/Info'
 import LatestProducts from '../components/Home/ProductHighlights'
 
@@ -14,7 +12,7 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="Hindernis"
+      title="Printful Demo"
       styleClass="default-background"
     />
     <Info />

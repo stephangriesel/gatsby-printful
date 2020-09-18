@@ -9,6 +9,10 @@
   margin: 1em auto;
 }
 
+.navbar a {
+  color: var(--mainDarkerGrey);
+}
+
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,8 +34,8 @@
 
 .navbar-nav .bag {
   padding: 0.5em;
-  background: var(--mainDark);
-  color: var(--mainGrey);
+  background: var(--mainGrey);
+  color: var(--mainWhite);
   font-size: 1.8em;
 }
 

@@ -7,6 +7,9 @@
   max-width: 980px;
   width: 100%;
   margin: 1em auto;
+  a {
+    color:var(--mainDarkerGrey);
+  }
 }
 
 .navbar-nav {
@@ -21,8 +24,8 @@
 
   .bag {
     padding: 0.5em;
-    background: var(--mainDark);
-    color: var(--mainGrey);
+    background: var(--mainGrey);
+    color: var(--mainWhite);
     font-size:1.8em;
   }
 

@@ -48,11 +48,11 @@ export default class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-sm navbar-dark">
+            <nav className="navbar navbar-expand-sm">
                 <Link to="/" className="navbar-brand fade-in">
                     <div className="logo-wrapper brand">
-                        {/* <h1>Hindernis</h1> */}
-                        <img className="logo" src={logo} alt="logo" />
+                        <h1>Printful Demo</h1>
+                        {/* <img className="logo" src={logo} alt="logo" /> */}
                     </div>
                 </Link>
                 <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
