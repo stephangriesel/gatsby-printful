@@ -18,6 +18,8 @@ h5 {
 }
 
 :root {
+  --mainDark:#313131; 
+  --mainLight:#fcfcfc;
   --mainBlack: #000000;
   --mainPink: #ffa69eff;
   --mainYellowish: #faf3ddff;
@@ -26,13 +28,12 @@ h5 {
   --mainDarkerGrey: #313131;
   --mainWhite: #ffffff;
   --mainOffWhite: #faf6d8;
-  --mainDark: #010101;
   --mainGrey: #767676;
   --mainTransparentBlack: rgba(0, 0, 0,0.4);
 }
 
 body {
-  background: var(--mainWhite);
+  background: var(--mainLight);
   color: var(--mainDarkerGrey);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
@@ -171,7 +172,7 @@ picture {
 }
 
 .snipcart-checkout {
-  background:var(--mainWhite);
+  background:transparent;
 }
   
 

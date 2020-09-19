@@ -7,6 +7,7 @@
   max-width: 980px;
   width: 100%;
   margin: 1em auto;
+  background-color: transparent !important;
 }
 
 .navbar a {
@@ -33,6 +34,7 @@
 }
 
 .navbar-nav .bag {
+  background: transparent;
   padding: 0.5em;
   color: var(--mainDarkerGrey);
   font-size: 1.8em;

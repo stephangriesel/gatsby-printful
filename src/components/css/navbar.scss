@@ -10,6 +10,8 @@
   a {
     color:var(--mainDarkerGrey);
   }
+  // BOOTSTRAP OVERRIDE 
+  background-color: transparent !important;
 }
 
 .navbar-nav {
@@ -23,6 +25,7 @@
   }
 
   .bag {
+    background: transparent;
     padding: 0.5em;
     color: var(--mainDarkerGrey);
     font-size:1.8em;
