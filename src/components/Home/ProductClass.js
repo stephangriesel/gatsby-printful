@@ -128,7 +128,7 @@ export default class ProductClass extends Component {
                             {this.state.allProducts.map(({ node }) => {
                                 return (
                                     <div key={node.id} className="col-12 col-md-4 my-3 d-flex mx-auto">
-                                        <div className="prd-item-shop m-3 mx-auto fade-in bg-dark p-5 rounded border">
+                                        <div className="prd-item-shop m-3 mx-auto fade-in p-5 rounded border">
                                             <div className="mx-auto">
                                                 <h6 className="mb-6 text-center">{node.title}</h6>
                                             </div>

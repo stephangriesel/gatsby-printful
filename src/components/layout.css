@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 h1, h4, li {
-  font-family: "Adam", sans-serif;
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
 }
 
 * {
@@ -22,6 +27,7 @@ h1, h4, li {
   --mainOffWhite: #faf6d8;
   --mainDark: #010101;
   --mainGrey: #767676;
+  --mainTransparentBlack: rgba(0, 0, 0,0.4);
 }
 
 body {
@@ -79,13 +85,13 @@ body {
 
 .footer {
   font-family: 'Questrial', sans-serif;
-  background: var(--mainBlack);
-  color: var(--mainGrey);
+  background: var(--mainTransparentBlack);
+  color: var(--mainWhite);
   text-decoration: none;
 }
 
 .footer a {
-  color: var(--mainGrey);
+  color: var(--mainWhite);
 }
 
 .menu {
@@ -93,10 +99,32 @@ body {
 }
 
 .contact {
-  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.contact .form-group {
+  width: 20em;
+  text-align: center;
 }
 
 /* Bootstrap Override*/
+.bg-light {
+  background-color: #FFF !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--mainDarkerGrey) !important;
+}
+
 .prd-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +145,7 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   width: 400px;
+  background-color: var(--mainWhite) !important;
 }
 
 .prd-img {
@@ -141,7 +170,7 @@ body {
 }
 
 .card {
-  background-color: var(--mainDarkerGrey);
+  background-color: var(--mainWhite);
   border: solid #FFF 1px;
 }
 

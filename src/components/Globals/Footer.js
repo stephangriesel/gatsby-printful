@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col-10 mx-auto col-md-6 text-center text-capatalize">
-                        <h5 className="font-weight-bold text-muted">Created & Hosted by <FaRegHandPeace /> <a href="https://www.consulitate.co.za">Consulitate</a></h5>
+                        <h5 className="font-weight-bold">Created & Hosted by <FaRegHandPeace /> <a href="https://www.consulitate.co.za">Consulitate</a></h5>
                     </div>
                 </div>
             </div>

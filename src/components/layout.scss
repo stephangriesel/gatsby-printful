@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 h1, h4, li {
-  font-family: "Adam", sans-serif;
+  font-family: 'Abel', sans-serif;
+  margin:0;
+}
+
+h5 {
+  margin:0;
+  
 }
 
 * {
@@ -22,6 +28,7 @@ h1, h4, li {
   --mainOffWhite: #faf6d8;
   --mainDark: #010101;
   --mainGrey: #767676;
+  --mainTransparentBlack: rgba(0, 0, 0,0.4);
 }
 
 body {
@@ -68,11 +75,11 @@ section {
 
 .footer {
   font-family: 'Questrial', sans-serif;
-  background: var(--mainBlack);
-  color: var(--mainGrey);
+  background: var(--mainTransparentBlack);
+  color: var(--mainWhite);
   text-decoration: none;
   a {
-    color: var(--mainGrey);
+    color: var(--mainWhite);
   }
 }
 
@@ -81,10 +88,25 @@ section {
 }
 
 .contact {
-  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  .form-group {
+    width:20em;
+    text-align: center;;
+  }
 }
 
 /* Bootstrap Override*/
+
+.bg-light {
+  background-color:#FFF !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:var(--mainDarkerGrey) !important;
+}
 
 .prd-item {
   display: flex;
@@ -96,6 +118,7 @@ section {
   flex-direction: column;
   align-content: center;
   width:400px;
+  background-color: var(--mainWhite) !important;
 }
 
 .prd-img {
@@ -113,7 +136,7 @@ section {
 }
 
 .card {
-  background-color: var(--mainDarkerGrey);
+  background-color: var(--mainWhite);
   border:solid #FFF 1px;
 }
 

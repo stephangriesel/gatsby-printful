@@ -34,13 +34,12 @@
 
 .navbar-nav .bag {
   padding: 0.5em;
-  background: var(--mainGrey);
-  color: var(--mainWhite);
+  color: var(--mainDarkerGrey);
   font-size: 1.8em;
 }
 
 .navbar-nav .bag:hover {
-  color: var(--mainWhite) !important;
+  color: var(--mainGrey);
   -webkit-transition: ease-in 0.5s;
   transition: ease-in 0.5s;
 }
@@ -48,7 +47,7 @@
 .navbar-nav .nav-link {
   position: relative;
   font-weight: 900;
-  font-size: 1.3em;
+  font-size: 1.0em;
   letter-spacing: 0.1em;
 }
 

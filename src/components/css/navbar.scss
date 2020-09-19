@@ -24,21 +24,19 @@
 
   .bag {
     padding: 0.5em;
-    background: var(--mainGrey);
-    color: var(--mainWhite);
+    color: var(--mainDarkerGrey);
     font-size:1.8em;
   }
 
   .bag:hover {
-    // border: 1px var(--mainGrey) solid;
-    color: var(--mainWhite) !important;
+    color: var(--mainGrey);
     transition: ease-in 0.5s;
   }
 
   .nav-link {
     position: relative;
     font-weight:900;
-    font-size: 1.3em;
+    font-size: 1.0em;
     letter-spacing: 0.1em;
   }
 
