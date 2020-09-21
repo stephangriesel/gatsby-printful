@@ -4,10 +4,10 @@ import './SideDrawer.css';
 const sideDrawer = props => (
     <nav className="side-drawer">
         <ul>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
         </ul>
     </nav>
 );

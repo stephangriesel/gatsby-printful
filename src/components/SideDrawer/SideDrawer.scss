@@ -1,4 +1,12 @@
 .side-drawer {
+    a {
+        &:hover {
+            color:var(--lightGrey);
+        }
+        &:active {
+            color:var(--lightGrey);
+        }
+    }
     height:100%;
     background:var(--mainLight);
     color:var(--mainDark);
@@ -6,6 +14,19 @@
     position: fixed;
     top:0;
     left:0;
+    max-width:60%;
     width: 400px;
-    z-index: 2;
+    z-index: 3;
+    cursor:pointer;
+    ul {
+        list-style: none;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size:1.4em;
+        li {
+            margin:0 1.2em;
+        }
+    }
 }

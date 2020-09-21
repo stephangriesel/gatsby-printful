@@ -15,6 +15,7 @@ import Footer from './Globals/Footer';
 import SimpleReactLightbox from "simple-react-lightbox";
 import Toolbar from './Toolbar/Toolbar';
 import SideDrawer from './SideDrawer/SideDrawer';
+import BackDrop from './BackDrop/BackDrop';
 
 const Layout = ({ children }) =>
 
@@ -22,6 +23,7 @@ const Layout = ({ children }) =>
     <SimpleReactLightbox>
       <Toolbar />
       <SideDrawer />
+      <BackDrop />
       {/* <Navbar /> */}
       <div className="wrapper">
         {children}

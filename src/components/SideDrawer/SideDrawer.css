@@ -7,7 +7,37 @@
   position: fixed;
   top: 0;
   left: 0;
+  max-width: 60%;
   width: 400px;
-  z-index: 2;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.side-drawer a:hover {
+  color: var(--lightGrey);
+}
+
+.side-drawer a:active {
+  color: var(--lightGrey);
+}
+
+.side-drawer ul {
+  list-style: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4em;
+}
+
+.side-drawer ul li {
+  margin: 0 1.2em;
 }
 /*# sourceMappingURL=SideDrawer.css.map */

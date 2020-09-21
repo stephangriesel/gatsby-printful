@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,QAAQ,EAAC,KAAK;EACd,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;EACX,UAAU,EAAC,kBAAe;EAC1B,OAAO,EAAE,CAAC;CACb",
+    "sources": [
+        "BackDrop.scss"
+    ],
+    "names": [],
+    "file": "BackDrop.css"
+}
