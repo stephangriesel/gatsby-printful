@@ -32,11 +32,16 @@ h5 {
   --mainTransparentBlack: rgba(0, 0, 0,0.4);
 }
 
+html {
+  height:100%;
+}
+
 body {
   background: var(--mainLight);
   color: var(--mainDarkerGrey);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  height:100%;
 }
 
 section {

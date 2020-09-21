@@ -13,14 +13,16 @@ import "./layout.css"
 import Navbar from './Globals/Navbar';
 import Footer from './Globals/Footer';
 import SimpleReactLightbox from "simple-react-lightbox";
-// import Toolbar from './Toolbar/Toolbar';
+import Toolbar from './Toolbar/Toolbar';
+import SideDrawer from './SideDrawer/SideDrawer';
 
 const Layout = ({ children }) =>
 
   <>
     <SimpleReactLightbox>
-      {/* <Toolbar /> */}
-      <Navbar />
+      <Toolbar />
+      <SideDrawer />
+      {/* <Navbar /> */}
       <div className="wrapper">
         {children}
 

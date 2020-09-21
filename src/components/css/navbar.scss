@@ -14,6 +14,50 @@
   background-color: transparent !important;
 }
 
+.toolbar {
+  width:100%;
+  top:0;
+  left:0;
+  position:fixed;
+  background:var(--mainLight);
+  height:5em;
+  z-index: 1;
+  .toolbar__navigation {
+    display:flex;
+    align-content: center;
+    align-items: center;
+    height:100%;
+    padding:0 1rem;
+    .spacer {
+      flex:1;
+    }
+  }
+  .toolbar__navigation-items {
+    ul {
+      list-style: none;
+      display:flex;
+      margin:0 !important; // bootstrap override
+    }
+    li {
+      padding:0 0.5em;
+    }
+    a {
+      color: var(--mainDarkerGrey);
+    &:hover,:active {
+      color:var(--mainGrey);
+    }
+    }
+  }
+  .toolbar__logo {
+    margin-left:0.5em;
+    a {
+      color:var(--mainDarkerGrey);
+      font-size: 2em;
+      text-decoration: none;
+    }
+  }
+}
+
 .navbar-nav {
   display: flex;
   align-items: center;

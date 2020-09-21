@@ -1,0 +1,27 @@
+.toggle-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 24px;
+  width: 36px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button .toggle-button__line {
+  width: 30px;
+  height: 3px;
+  background: var(--mainGrey);
+}
+/*# sourceMappingURL=DrawerToggleButton.css.map */
