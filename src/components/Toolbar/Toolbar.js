@@ -1,5 +1,6 @@
 import React from 'react';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
+import { FaShoppingCart } from 'react-icons/fa';
 
 
 const toolbar = props => (
@@ -13,8 +14,11 @@ const toolbar = props => (
             <div className="toolbar__navigation-items">
                 <ul>
                     <li><a href="/">Menu Item</a></li>
-                    <li><a href="/">Menu Item</a> </li>
+                    <li><a href="/shop">Shop</a> </li>
                     <li><a href="/">Menu Item</a></li>
+                    <li>
+                        <button className="snipcart-checkout" aria-label="shopping cart button"><span className="bag"><FaShoppingCart /></span></button>
+                    </li>
                 </ul>
             </div>
         </nav>

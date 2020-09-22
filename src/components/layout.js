@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 import './bootstrap.min.css';
@@ -21,10 +21,10 @@ const Layout = ({ children }) =>
 
   <>
     <SimpleReactLightbox>
-      <Toolbar />
+      {/* <Toolbar />
       <SideDrawer />
-      <BackDrop />
-      {/* <Navbar /> */}
+      <BackDrop /> */}
+      <Navbar />
       <div className="wrapper">
         {children}
 
