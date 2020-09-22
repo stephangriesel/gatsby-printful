@@ -1,12 +1,4 @@
 .side-drawer {
-    a {
-        &:hover {
-            color:var(--lightGrey);
-        }
-        &:active {
-            color:var(--lightGrey);
-        }
-    }
     height:100%;
     background:var(--mainLight);
     color:var(--mainDark);
@@ -18,6 +10,19 @@
     width: 400px;
     z-index: 3;
     cursor:pointer;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+    &.open {
+        transform: translateX(0);
+    }
+    a {
+        &:hover {
+            color:var(--lightGrey);
+        }
+        &:active {
+            color:var(--lightGrey);
+        }
+    }
     ul {
         list-style: none;
         height:100%;
@@ -28,5 +33,11 @@
         li {
             margin:0 1.2em;
         }
+    }
+}
+
+@media (min-width: 600px) {
+    .side-drawer {
+        display:none;
     }
 }

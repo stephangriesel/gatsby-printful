@@ -6,8 +6,8 @@ import { FaShoppingCart } from 'react-icons/fa';
 const toolbar = props => (
     <header className="toolbar">
         <nav className="toolbar__navigation">
-            <div>
-                <DrawerToggleButton />
+            <div className="toolbar__toggle-button">
+                <DrawerToggleButton click={props.drawerClickHandler} />
             </div>
             <div className="toolbar__logo"><a href="/">Logo</a></div>
             <div className="spacer"></div>

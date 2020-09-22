@@ -110,7 +110,7 @@ export default class ProductClass extends Component {
                     <div className="container">
                         {/* <Title title="Our Products" /> */}
                         <div className="row mb-5">
-                            <div className="col-10 mx-auto text-center">
+                            <div className="col-10 mx-auto text-center mt-5">
                                 {this.state.productCategories.map((category, index) => {
                                     return (
                                         <button

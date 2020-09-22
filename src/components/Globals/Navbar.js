@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import logo from '../../images/logo.png'
+// import { Link } from 'gatsby'
+// import logo from '../../images/logo.png'
 import '../css/navbar.css';
 
 import Toolbar from '../Toolbar/Toolbar';
@@ -18,18 +18,20 @@ export default class Navbar extends Component {
         });
     };
 
+    backdropClickHandler = () => {
+        this.setState({ sideDrawerOpen: false })
+    };
+
     render() {
-        let sideDrawer;
         let backDrop;
 
         if (this.state.sideDrawerOpen) {
-            sideDrawer = <SideDrawer />;
-            backDrop = <BackDrop />
+            backDrop = <BackDrop click={this.backdropClickHandler} />
         }
         return (
-            <div>
-                <Toolbar />
-                {sideDrawer}
+            <div style={{ height: '100%' }}>
+                <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+                <SideDrawer show={this.state.sideDrawerOpen} />
                 {backDrop}
             </div>
         );

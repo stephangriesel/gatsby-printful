@@ -107,8 +107,17 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .toolbar__navigation-items {
+    display:none;
+  }
   .logo {
     width: 13em;
     height: auto;
+  }
+}
+
+@media (min-width:600px) {
+  .toolbar__toggle-button {
+    display:none;
   }
 }
