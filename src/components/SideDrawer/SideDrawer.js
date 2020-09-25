@@ -1,5 +1,6 @@
 import React from 'react';
 import './SideDrawer.css';
+import { FaShoppingCart } from 'react-icons/fa';
 
 const sideDrawer = props => {
     let drawerClasses = ['side-drawer'];
@@ -9,10 +10,11 @@ const sideDrawer = props => {
     return (
         <nav className={drawerClasses}>
             <ul>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
+                <li><a href="/shop">Shop</a> </li>
+                <li><a href="/contact">Contact</a> </li>
+                <li>
+                    <button className="snipcart-checkout" aria-label="shopping cart button"><span className="bag"><FaShoppingCart /></span></button>
+                </li>
             </ul>
         </nav>
     )

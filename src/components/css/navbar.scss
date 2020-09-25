@@ -36,6 +36,7 @@
     ul {
       list-style: none;
       display:flex;
+      align-items: center;
       margin:0 !important; // bootstrap override
     }
     li {
@@ -55,6 +56,10 @@
       font-size: 2em;
       text-decoration: none;
     }
+  }
+  button {
+    font-size:1.5em;
+    border:none;
   }
 }
 

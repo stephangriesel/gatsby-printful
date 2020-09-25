@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-// import { Link } from 'gatsby'
-// import logo from '../../images/logo.png'
 import '../css/navbar.css';
-
 import Toolbar from '../Toolbar/Toolbar';
 import SideDrawer from '../SideDrawer/SideDrawer';
 import BackDrop from '../BackDrop/BackDrop';
