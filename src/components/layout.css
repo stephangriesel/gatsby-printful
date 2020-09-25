@@ -89,15 +89,30 @@ body {
   transition: ease-in 0.5s;
 }
 
-.footer {
+footer {
   font-family: 'Questrial', sans-serif;
-  background: var(--mainTransparentBlack);
   color: var(--mainWhite);
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.footer a {
-  color: var(--mainWhite);
+footer a {
+  color: var(--mainGrey);
+}
+
+footer a:hover {
+  color: var(--mainGrey);
+}
+
+footer p {
+  color: var(--mainGrey);
+  margin: 0 0.5em;
+  font-size: 0.8em;
 }
 
 .menu {

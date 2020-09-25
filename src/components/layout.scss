@@ -42,6 +42,7 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
   height:100%;
+  // overflow: hidden;
 }
 
 section {
@@ -79,13 +80,22 @@ section {
   transition: ease-in 0.5s;
 }
 
-.footer {
+footer {
   font-family: 'Questrial', sans-serif;
-  background: var(--mainTransparentBlack);
   color: var(--mainWhite);
   text-decoration: none;
+  display:flex;
+  justify-content: flex-end;
   a {
-    color: var(--mainWhite);
+    color: var(--mainGrey);
+    &:hover {
+      color:var(--mainGrey);
+    }
+  }
+  p {
+    color:var(--mainGrey);
+    margin:0 0.5em;
+    font-size:0.8em;
   }
 }
 
